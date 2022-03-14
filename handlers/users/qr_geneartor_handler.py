@@ -19,7 +19,7 @@ async def qr_generator(msg: Message, state: FSMContext):
     data = msg.text
     filename = f'{msg.from_user.id} {datetime.now().strftime("%H:%M:%S")}'
     generate_qr_of(data, save_as=filename)
-    await msg.answer_photo(photo=open(f'./client_images/{filename}.png', 'rb'), caption='Here is your QR')
+    await msg.answer_photo(photo=open(f'./client_images/{filename}.png', 'rb'), caption='Here is your QR \U0001F4E6')
     delete_client_image(filename)
 
     await state.finish()
