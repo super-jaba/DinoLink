@@ -1,1 +1,1 @@
-# DinoLink - A Simple QR Generator bot in Telegram
+# DinoLink - A simple QR Generator bot in Telegram
